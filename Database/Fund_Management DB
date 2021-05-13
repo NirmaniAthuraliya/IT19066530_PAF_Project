@@ -1,0 +1,27 @@
+--
+-- Table structure for table `fund`
+--
+
+CREATE TABLE `fund` (
+  `id` int(11) NOT NULL,
+  `fundCode` varchar(10) NOT NULL,
+  `fundName` varchar(40) NOT NULL,
+  `fundEmail` varchar(50) NOT NULL,
+  `fundAddress` varchar(100) NOT NULL,
+  `fundContact` varchar(15) NOT NULL,
+  `fundAmount` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `fund`
+--
+
+INSERT INTO `fund` (`id`, `fundCode`, `fundName`, `fundEmail`, `fundAddress`, `fundContact`, `fundAmount`) VALUES
+(7, '004', 'Fund 4', 'fund4@gmail.com', 'Panadura', '0765126700', '235000.00'),
+(10, '005', 'Fund 5', 'fund5@gmail.com', 'Colombo 5', '6879808', '500000.00'),
+(17, '007', 'fund 7', 'fund7@gmail.com', 'Kandy', '0722363490', '450000.00'),
+(18, '008', 'fund 8', 'fund8@gmail.com', 'Colombo 7', '0717578900', '600000.00'),
+(22, '010', 'Fund010', 'fund10@gmail.com', 'Colombo 06 Updated', '0712245678', '250000.00'),
+(28, '014', 'Fund 14', 'fund14@gmail.com', 'Gampaha Updated', '0714578964', '800000.00'),
+(32, '015', 'Fund 15', 'fund15@gmail.com', 'Horana', '0768900123', '150000.00'),
+(33, '016', 'Fund%252B16', 'fund16%2540gmail.com', 'Horana%2BUpdated', '0789001210+', '500000.00');
